@@ -47,7 +47,7 @@ node {
 //            } finally {
 //                junit '**/target/test-results/TESTS-results-jest.xml'
 //            }
-        }
+ //       }
 
         stage('packaging') {
             sh "./mvnw -ntp verify -P-webapp -Pprod -DskipTests"
