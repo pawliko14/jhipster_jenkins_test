@@ -36,17 +36,17 @@ node {
             }
         }
 
-        stage('frontend tests') {
-            try {
-               sh "npm install"
-              //  sh "npm run build" // added
-               //sh "npm test"
-                sh "CI=true npm test" // added
-            } catch(err) {
-                throw err
-            } finally {
-                junit '**/target/test-results/TESTS-results-jest.xml'
-            }
+//        stage('frontend tests') {
+//            try {
+//               sh "npm install"
+//              //  sh "npm run build" // added
+//               //sh "npm test"
+//                sh "CI=true npm test" // added
+//            } catch(err) {
+//                throw err
+//            } finally {
+//                junit '**/target/test-results/TESTS-results-jest.xml'
+//            }
         }
 
         stage('packaging') {
